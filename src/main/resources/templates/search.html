@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title></head>
+</title>
+</head>
+<body>
+<h3>검색하려는 고객의 ID 를 입력해 주세요...</h3>
+<hr>
+<form method="post" th:action>
+    ID <input type="text" name="id">
+    <input type="submit" value="검색">
+</form>
+<a href="/" th:href="@{/}">홈 화면으로 이동</a><br>
+</body>
+</html>

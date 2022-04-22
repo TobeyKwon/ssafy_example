@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Insert title here</title></head>
+</title>
+</head>
+<body>
+<div th:if="${customer != null}">
+  <h3>** 검색된 고객정보 **</h3>
+  아이디 : <p th:text="${customer.id}"></p>
+  비밀번호 : <p th:text="${customer.password}"></p>
+  이름 : <p th:text="${customer.name}"></p>
+  <a href="/" th:href="@{/}">홈 화면으로 이동</a><br>
+</div>
+<div th:if="${customer == null}">
+  <h3>** 검색하신 아이디가 존재하지 않습니다. **</h3>
+</div>
+<a href="/" th:href="@{/}">홈 화면으로 이동</a><br>
+</body>
+</html>

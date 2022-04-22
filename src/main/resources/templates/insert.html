@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title></head>
+</title>
+</head>
+<body>
+    <form action="" th:action="@{regist}" th:object="${customer}"  method="post">
+    아이디 : <input type="text" th:field="*{id}"><br>
+    패스워드 : <input type="password" th:field="*{password}" name="password"><br>
+    고객명 : <input type="text" th:field="*{name}" name="name"><br>
+    <input type="submit" value="등록">
+    <input type="reset" value="재작성">
+    </form>
+    <a href="/" th:href="@{/}">홈 화면으로 이동</a><br>
+</body>
+</html>
